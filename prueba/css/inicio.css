@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #ffffff; /* Color del cielo */
+}
+
+.container {
+    text-align: center;
+}
+
+.runway {
+    position: relative;
+}
+
+
+@keyframes takeOff {
+    0% {
+        transform: translate(-50%, 0);
+    }
+    100% {
+        transform: translate(-50%, -100vh);
+    }
+}
+
+h1, p {
+    font-family: 'Arial', sans-serif;
+    color: #000000;
+    font-size: 20px;
+}
+
+.btn{
+    position: relative;
+    cursor: pointer;
+    background-color: rgb(127, 197, 255);
+    border:0;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.takeoff-gif {
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    top: -260px;
+    transform: translateX(-50%);
+    width: 500px;
+}
